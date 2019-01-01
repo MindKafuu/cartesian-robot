@@ -1,0 +1,50 @@
+
+ROM used:   944/33788 (3%)
+            944/33788 (3%) including unused fragments
+
+            1.0 Average locations per line
+            59.0 Average locations per statement
+
+RAM used:   130/8192 (2%) at main() level
+            130/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   47    16 100  sensor.c
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.h
+   32     0   0  BL_Support.h
+----- -----
+  941    16 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   1    2             @delay_ms1
+0     62   3    2   108  2.7  INT_EXT_INPUT1
+0      6   0    0    42  1.4  Init_Interrupts
+0    106   6    0   138  2.4  MAIN
+0    246  13    0             @PRINTFD16_115200_5725_5724
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              16
+    Comments                162
+    Volume (V)              395
+    Difficulty (D)          6.1
+    Effort to implement (E) 2410
+    Time to implement (T)   2 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    72
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA   436  29772  
+
+
+

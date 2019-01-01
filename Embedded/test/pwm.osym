@@ -1,0 +1,49 @@
+_RETURN_
+C1OUT
+C2OUT
+pe
+pe_64
+pl
+ql
+pl_64
+ql_64
+pas
+qas
+pas_64
+qas_64
+pat
+qat
+pat_64
+qat_64
+count
+dutyValue
+duty
+percent
+
+Project Directory:
+    D:\Module6-7\Embedded\test\
+
+Project Files:
+    pwm.c                                                   [27-Oct-18 13:30  CRC=A906E6DF]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+    C:\Program Files (x86)\PICC\drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+
+Source signature=A5F12976
+
+Units:
+    pwm (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Output file:    Relocatable
+
+Output Files:
+    Errors:      pwm.err
+    Object:      pwm.o
+    Symbols:     pwm.osym

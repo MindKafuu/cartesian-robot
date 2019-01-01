@@ -1,0 +1,16 @@
+[PROJECT]
+Target=multiDrop_rev2.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=multiDrop_rev2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[multiDrop_rev2.c]
+Type=4
+[mru-list]
+1=multiDrop_rev2.c
+[Units]
+Count=1
+1=multiDrop_rev2 (main)

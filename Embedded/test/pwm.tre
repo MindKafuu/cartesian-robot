@@ -1,0 +1,12 @@
+ÀÄpwm
+   ÃÄMAIN  0/326  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄInit_Timer2  0/14  Ram=0
+   ³  ÀÄsetLeft  0/10  Ram=0
+   ÀÄTIMER2_isr  0/48  Ram=3
+      ÀÄPwm  0/22  Ram=5
+         ÀÄfindDuty  0/96  Ram=11
+            ÃÄ@SI64TOF64  0/100  Ram=0
+            ÃÄ@MULFF64  0/272  Ram=0
+            ÃÄ@DIVFF64  0/264  Ram=8
+            ÀÄ@F64TOSI64  0/86  Ram=0

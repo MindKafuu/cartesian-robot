@@ -1,0 +1,8 @@
+>>> Warning 201 "mainPIC.c" Line 235(1,1): Assignment inside relational expression
+>>> Warning 216 "mainPIC.c" Line 588(1,2): Interrupts disabled during call to prevent re-entrancy:  (@SFTOI)
+>>> Warning 216 "mainPIC.c" Line 588(1,2): Interrupts disabled during call to prevent re-entrancy:  (@ADDFF)
+>>> Warning 216 "mainPIC.c" Line 588(1,2): Interrupts disabled during call to prevent re-entrancy:  (@FLT)
+>>> Warning 202 "mainPIC.c" Line 53(50,53): Variable never used:   key
+      Memory usage:   ROM=19%      RAM=3% - 4%
+      0 Errors,  5 Warnings.
+Build Successful.

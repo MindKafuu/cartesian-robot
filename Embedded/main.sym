@@ -1,0 +1,109 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W3  @DIVFF64.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W1  @DIV3232B.P3
+W0 -W3  @F64TOSI64.P4
+W0      @delay_ms1.P5
+W0      @delay_us1.P6
+W0 -W3  @SI64TOF64.P7
+W0 -W3  @MULFF64.P8
+W0      @PRINTFD16_115200_5725_5724.P9
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2      @READ_ROM_MEMORY.P1
+W2      @WRITE_PACKED_MEMORY.P2
+W2 -W3  @DIV3232B.P3
+W2      @READ_PACKED_MEMORY.P4
+W3      @READ_PACKED_MEMORY.P1
+W3      @READ_ROM_MEMORY.P2
+W3      @WRITE_PACKED_MEMORY.P3
+W4      @PRINTFD16_115200_5725_5724.P1
+W4 -W7  @MULFF64.P2
+W4 -W7  @DIVFF64.P3
+630.6   C1OUT
+630.7   C2OUT
+800-804 head
+805     check
+806-80B data
+80C-80D flag
+80E-80F count
+810-811 direction
+812     id
+813     lenght
+814-815 encount
+816-817 conDuty
+818-819 duty
+81A-81B percent
+81C-81D dutyValue
+81E-81F perDuty
+820-821 s
+822-823 p
+824-825 e
+826-827 kk
+828-829 u
+82A-82B Kp
+82C-82D Ki
+82E-82F Kd
+830-831 setPoint
+832-833 current
+834-835 convertEncoder.encount
+836-837 findPercent.u
+83C-83D Pwm.percent
+842-843 findDuty.duty
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const796.call
+000E16  @const800.call
+000E2E  @const801.call
+000E48  @const803.call
+000E62  @SI64TOF64
+000EC6  @MULFF64
+000FD6  @DIVFF64
+0010DE  @F64TOSI64
+001134  convertEncoder
+001194  INT_EXT_INPUT1
+0011C8  findPercent
+001228  findDuty
+0012A2  Pwm
+0012DA  TIMER2_isr
+001350  Init_Interrupts
+001356  Init_Timer2
+001364  @PRINTFD16_115200_5725_5724
+00145A  @delay_ms1
+00146A  MAIN
+00146A  @cinit1
+0014CC  @cinit2
+
+Project Directory:
+    D:\Module6-7\Embedded\
+
+Project Files:
+    main.c                                                  [07-Nov-18 19:30  CRC=B7B9531B]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+
+Source signature=34F467AD
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    Errors:      main.err
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

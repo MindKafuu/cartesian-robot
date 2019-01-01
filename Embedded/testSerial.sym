@@ -1,0 +1,87 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0      @PRINTFD16_775.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0      @SITOF.P3
+W0 -W1  @ADDFF.P4
+W0 -W1  @DIV3232B.P5
+W0 -W1  @SFTOI.P6
+W0L     @SPRINTF.P7
+W0 -W1  @MULFF.P8
+W0      @delay_us1.P9
+W0      @PRINTFD16_115200_5725_5724.P10
+W0      @delay_ms1.P11
+W0 -W1  @DIVFF.P12
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2 -W3  @DIV3232B.P1
+W2 -W3  @DIVFF.P2
+W2 -W3  @MULFF.P3
+W2      @READ_PACKED_MEMORY.P4
+W2      @READ_ROM_MEMORY.P5
+W2      @WRITE_PACKED_MEMORY.P6
+W2 -W3  @ADDFF.P7
+W3      @READ_ROM_MEMORY.P1
+W3      @WRITE_PACKED_MEMORY.P2
+W3      @READ_PACKED_MEMORY.P3
+W4      @PRINTFD16_115200_5725_5724.P1
+W4      @PRINTFD16_775.P2
+630.6   C1OUT
+630.7   C2OUT
+800-801 positionX
+802-803 positionY
+804-806 data
+807     getPackage
+808-809 check
+80A-80B check_data
+80C-80D checksum
+80E     theta
+810-811 @sprintf_string
+812     UART1_Isr.c
+814     SM_RxD.c
+815     SM_RxD.checksum_1
+816     SM_RxD.checksum_2
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const797.call
+000E0E  @const801.call
+000E2A  SM_RxD
+000F40  UART1_Isr
+000F70  @PRINTFD16_115200_5725_5724
+001066  handdleData
+00109A  MAIN
+00109A  @cinit1
+0010E0  @cinit2
+
+Project Directory:
+    D:\Module6-7\Embedded\
+
+Project Files:
+    testSerial.c                                            [10-Nov-18 22:42  CRC=A2D70623]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+
+Source signature=20121AB5
+
+Units:
+    testSerial (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    Errors:      testSerial.err
+    INHX8:       testSerial.hex
+    Symbols:     testSerial.sym
+    List:        testSerial.lst
+    Debug/COFF:  testSerial.cof
+    Project:     testSerial.ccspjt
+    Call Tree:   testSerial.tre
+    Statistics:  testSerial.STA

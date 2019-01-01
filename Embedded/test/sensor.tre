@@ -1,0 +1,7 @@
+ÀÄsensor
+   ÃÄMAIN  0/106  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄInit_Interrupts  0/6  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÀÄ@delay_ms1  0/16  Ram=2
+   ÀÄINT_EXT_INPUT1  0/62  Ram=2

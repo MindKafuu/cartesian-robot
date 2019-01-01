@@ -1,0 +1,170 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0      @SITOF.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W1  @MULFF.P3
+W0 -W3  @F64TOSI64.P4
+W0 -W1  @DIV3232B.P5
+W0      @delay_us1.P6
+W0 -W1  @SFTOI.P7
+W0 -W1  @FLT.P8
+W0 -W3  @FLT64.P9
+W0 -W1  @ADDFF.P10
+W0 -W3  @MULFF64.P11
+W0 -W3  @F64TO48.P12
+W0      @ITOF.P13
+W0      @delay_ms1.P14
+W0 -W3  @SI64TOF64.P15
+W0 -W1  @SDTOF.P16
+W0 -W3  @DIVFF64.P17
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2 -W3  @DIV3232B.P1
+W2      @READ_PACKED_MEMORY.P2
+W2      @READ_ROM_MEMORY.P3
+W2 -W3  @FLT.P4
+W2 -W3  @MULFF.P5
+W2 -W3  @ADDFF.P6
+W2      @WRITE_PACKED_MEMORY.P7
+W3      @READ_PACKED_MEMORY.P1
+W3      @READ_ROM_MEMORY.P2
+W3      @WRITE_PACKED_MEMORY.P3
+W4 -W7  @DIVFF64.P1
+W4 -W7  @FLT64.P2
+W4 -W7  @MULFF64.P3
+630.6   C1OUT
+630.7   C2OUT
+800-803 encountX
+804-807 encountY
+808-80B encountZ
+80C-80D positionX
+80E-80F positionY
+810-811 data
+812-813 check
+814-815 check_data
+816-817 checksum
+818     getPackage
+819     theta
+81A-81D errorMotorX
+81E-821 errorMotorY
+822-825 errorMotorZ
+826-829 setPointX
+82A-82D setPointY
+82E-831 setPointZ
+832-835 currentX
+836-839 currentY
+83A-83D currentZ
+83E-841 pwmX
+842-845 pwmY
+846-849 pwmZ
+84A-84D Kp_X
+84E-851 Kp_Y
+852-855 Kp_z
+856-859 Ki_X
+85A-85D Ki_Y
+85E-861 Ki_z
+862-865 Kd_X
+866-869 Kd_Y
+86A-86D Kd_Z
+86E-871 pX
+872-875 pY
+876-879 pZ
+87A-87D sumErrorX
+87E-881 sumErrorY
+882-885 sumErrorZ
+886-887 state
+888-889 checkCurrentX
+88A-88B checkCurrentY
+88C-88D checkCurrentZ
+88E-88F key
+890-891 count
+892     ModeSystem
+894-897 PwmMotorX.pwmX
+894-897 PwmMotorY.pwmY
+898-89B PwmMotorY.dutyY
+898-89B PwmMotorX.dutyX
+8B4-8B7 EncoderX.encountX
+8B4     UART1_Isr.c
+8B8-8BB EncoderX.curX
+8B8-8BB EncoderY.encountY
+8BC-8BF EncoderZ.encountZ
+8BC-8BF EncoderY.curY
+8C0-8C3 EncoderZ.curZ
+8C2     SM_RxD.c
+8C3     SM_RxD.checksum_1
+8C4     SM_RxD.checksum_2
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @SI64TOF64
+000E60  @MULFF64
+000F70  @DIVFF64
+001078  @F64TOSI64
+0010CE  EncoderX
+001130  @SDTOF
+00117E  INT_EXT_INPUT0
+0011C6  EncoderY
+001228  INT_EXT_INPUT1
+001270  EncoderZ
+0012D2  INT_EXT_INPUT2
+00131A  @ADDFF
+0014C4  @FLT
+00152C  @SFTOI
+001558  @FLT64
+0015DC  @SITOF
+001626  @MULFF
+0016EA  TIMER1_ist
+0019D4  SM_RxD
+001AF8  UART1_Isr
+001B28  Init_Timer1
+001B36  Init_Interrupts
+001B64  @ITOF
+001B9E  FowardX
+001BA8  StopX
+001BB2  BackWardY
+001BBC  BackWardZ
+001BC6  StopZ
+001BD0  PwmZero
+001C1E  @F64TO48
+001C62  BackWardX
+001C6C  PwmMotorX
+001D68  FowardY
+001D72  PwmMotorY
+001E6E  FowardZ
+001E78  PwmMotorZ
+001EA2  @delay_ms1
+001EB2  @cinit1
+001EB2  MAIN
+001F92  @cinit2
+
+Project Directory:
+    D:\Module6-7\Integration\
+
+Project Files:
+    mainPIC.c                                               [19-Nov-18 07:10  CRC=61861637]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+
+Source signature=DEC12AC9
+
+Units:
+    mainPIC (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    Errors:      mainPIC.err
+    INHX8:       mainPIC.hex
+    Symbols:     mainPIC.sym
+    List:        mainPIC.lst
+    Debug/COFF:  mainPIC.cof
+    Project:     mainPIC.ccspjt
+    Call Tree:   mainPIC.tre
+    Statistics:  mainPIC.STA

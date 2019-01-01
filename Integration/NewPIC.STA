@@ -1,0 +1,82 @@
+
+ROM used:   5608/33788 (17%)
+            5608/33788 (17%) including unused fragments
+
+            3.4 Average locations per line
+            12.1 Average locations per statement
+
+RAM used:   186/8192 (2%) at main() level
+            268/8192 (3%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  758   462 100  NewPIC.c
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.h
+   32     0   0  BL_Support.h
+----- -----
+ 1652   462 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   0    2             @delay_ms1
+0     14   0    0    50  1.5  FowardX
+0     12   0    0    50  1.5  BackWardX
+0     10   0    0    32  1.0  StopX
+0     14   0    0    50  1.5  FowardY
+0     12   0    0    50  1.5  BackWardY
+0     10   0    0    32  1.0  StopY
+0     14   0    0    50  1.5  FowardZ
+0     12   0    0    50  1.5  BackWardZ
+0     10   0    0    32  1.0  StopZ
+0    292   3    6  1959 10.6  SM_RxD
+0    100   1    0             @SI64TOF64
+0    272   2    0             @MULFF64
+0    494   4    8             @ADDFF64
+0     68   1    0             @F64TO48
+0    202   2    8             @DIVFF
+0     44   0    4             @SFTOI
+0    126   1   17   124  3.5  servo
+0    152   1    7   774  6.6  SetX
+0    152   1    7   774  6.6  SetY
+0    154   1    7   774  6.6  SetZ
+0    194   2    6  1272  4.4  PwmZero
+0     50   0    0    66  2.9  INT_EXT_INPUT0
+0     50   0    0    66  2.9  INT_EXT_INPUT1
+0     50   0    0    66  2.9  INT_EXT_INPUT2
+0     48   0    1    45  1.7  UART1_Isr
+0     22   0    0   186  1.8  Init_Interrupts
+0    450   4    7  1895  6.0  Pattern1
+0    340   3    7  1402  4.0  Pattern2
+0    450   4    7  1895  6.0  Pattern3
+0    214   2    7   772  3.0  Difference
+0    574   5    5  2073 10.8  MAIN
+0     66   1    8             @MULS3232
+0    126   1    8             @DIVS3232A
+0     22   0    0             @const851
+0    246   2    0             @PRINTFD16_115200_5725_5724
+0     18   0    0             @const855
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              462
+    Comments                191
+    Volume (V)              23178
+    Difficulty (D)          96.8
+    Effort to implement (E) 2242807
+    Time to implement (T)   34 hours, 37 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   60
+    Maintainability (MI)    42
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  5100  25108  
+
+
+

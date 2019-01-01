@@ -1,0 +1,41 @@
+ÀÄmain
+   ÃÄMAIN  0/436  Ram=3
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄInit_Interrupts  0/6  Ram=0
+   ³  ÃÄInit_Timer2  0/14  Ram=0
+   ³  ÃÄ@const796  0/26  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÃÄ@const800  0/24  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÃÄ@const801  0/26  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÃÄ@const803  0/26  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÀÄ@delay_ms1  0/16  Ram=2
+   ÃÄINT_EXT_INPUT1  0/52  Ram=2
+   ³  ÀÄconvertEncoder  0/96  Ram=11
+   ³     ÃÄ@SI64TOF64  0/100  Ram=0
+   ³     ÃÄ@MULFF64  0/272  Ram=0
+   ³     ÃÄ@DIVFF64  0/264  Ram=8
+   ³     ÀÄ@F64TOSI64  0/86  Ram=0
+   ÀÄTIMER2_isr  0/118  Ram=3
+      ÃÄfindPercent  0/96  Ram=11
+      ³  ÃÄ@SI64TOF64  0/100  Ram=0
+      ³  ÃÄ@MULFF64  0/272  Ram=0
+      ³  ÃÄ@DIVFF64  0/264  Ram=8
+      ³  ÀÄ@F64TOSI64  0/86  Ram=0
+      ÃÄPwm  0/56  Ram=5
+      ³  ÃÄfindDuty  0/122  Ram=11
+      ³  ³  ÃÄ@SI64TOF64  0/100  Ram=0
+      ³  ³  ÃÄ@MULFF64  0/272  Ram=0
+      ³  ³  ÃÄ@DIVFF64  0/264  Ram=8
+      ³  ³  ÀÄ@F64TOSI64  0/86  Ram=0
+      ³  ÀÄfindDuty  0/122  Ram=11
+      ³     ÀÄ*
+      ÃÄPwm  0/56  Ram=5
+      ³  ÀÄ*
+      ÃÄPwm  0/56  Ram=5
+      ³  ÀÄ*
+      ÀÄPwm  0/56  Ram=5
+         ÀÄ*

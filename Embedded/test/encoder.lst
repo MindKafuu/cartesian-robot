@@ -1,0 +1,324 @@
+CCS PCD C Compiler, Version 5.015, 5967               27-Oct-18 23:00
+
+               Filename:   D:\Module6-7\Embedded\test\encoder.lst
+
+               ROM used:   938 bytes (3%)
+                           Largest free fragment is 29778
+               RAM used:   130 (2%) at main() level
+                           130 (2%) worst case
+               Stack size: 128
+
+*
+0C00:  GOTO    F34
+*
+0C74:  GOTO    DFC
+.................... #include<24FJ48GA002.h> 
+.................... //////////// Standard Header file for the PIC24FJ48GA002 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC24FJ48GA002 
+*
+0E2E:  MOV     W5,[W15++]
+0E30:  MOV     #C,W5
+0E32:  REPEAT  #3
+0E34:  MOV     [W5++],[W15++]
+0E36:  BTSS    W0.F
+0E38:  BRA     E52
+0E3A:  NEG     W0,W0
+0E3C:  BSET    W4.8
+0E3E:  BTSS    W4.F
+0E40:  BRA     E52
+0E42:  MOV     W0,[W15++]
+0E44:  MOV     #2D,W0
+0E46:  BTSC.B  223.1
+0E48:  BRA     E46
+0E4A:  MOV     W0,224
+0E4C:  MOV     [--W15],W0
+0E4E:  BCLR    W4.8
+0E50:  DEC.B   0008
+0E52:  CLR     W5
+0E54:  MOV     W0,W7
+0E56:  MOV     W4,W9
+0E58:  BCLR    W4.F
+0E5A:  CP0.B   W4L
+0E5C:  BRA     NZ,E6A
+0E5E:  BTSC    W9.F
+0E60:  BRA     E66
+0E62:  MOV     #0,W5
+0E64:  BRA     E84
+0E66:  MOV     #0,W5
+0E68:  BRA     E84
+0E6A:  SUB.B   W4L,#6,W5L
+0E6C:  BRA     NC,E82
+0E6E:  MOV     #30,W0
+0E70:  BTSS    W9.F
+0E72:  MOV     #20,W0
+0E74:  BTSC.B  223.1
+0E76:  BRA     E74
+0E78:  MOV     W0,224
+0E7A:  DEC     W5,W5
+0E7C:  BRA     NN,E74
+0E7E:  MOV     #5,W5
+0E80:  BRA     E84
+0E82:  MOV     W4,W5
+0E84:  MOV     #6,W4
+0E86:  BTSC    W5.8
+0E88:  INC     W4,W4
+0E8A:  BSET    W5.E
+0E8C:  BTSC    W9.F
+0E8E:  BSET    W5.F
+0E90:  MOV     #2710,W8
+0E92:  REPEAT  #11
+0E94:  DIV.U   W7,W8
+0E96:  CALL    EDA
+0E9A:  MOV     W1,W7
+0E9C:  MOV     #3E8,W8
+0E9E:  REPEAT  #11
+0EA0:  DIV.U   W7,W8
+0EA2:  CALL    EDA
+0EA6:  MOV     W1,W7
+0EA8:  MOV     #64,W8
+0EAA:  REPEAT  #11
+0EAC:  DIV.U   W7,W8
+0EAE:  CALL    EDA
+0EB2:  MOV     W1,W7
+0EB4:  MOV     #A,W8
+0EB6:  REPEAT  #11
+0EB8:  DIV.U   W7,W8
+0EBA:  CALL    EDA
+0EBE:  BTSS    W9.8
+0EC0:  BRA     ECC
+0EC2:  MOV     #2D,W0
+0EC4:  BTSC.B  223.1
+0EC6:  BRA     EC4
+0EC8:  MOV     W0,224
+0ECA:  BCLR    W9.8
+0ECC:  MOV     #30,W0
+0ECE:  ADD.B   W1L,W0L,W0L
+0ED0:  MOV     W0,2A
+0ED2:  BTSC.B  223.1
+0ED4:  BRA     ED2
+0ED6:  MOV     W0,224
+0ED8:  BRA     F1A
+0EDA:  MOV     #30,W6
+0EDC:  CP0     W0
+0EDE:  BRA     NZ,EFC
+0EE0:  BTSS    W5.E
+0EE2:  BRA     F10
+0EE4:  DEC     W4,W4
+0EE6:  CP.B    W4L,W5L
+0EE8:  BRA     Z,EEE
+0EEA:  BTSC.B  42.0
+0EEC:  RETURN  
+0EEE:  CP0     W0
+0EF0:  BRA     NZ,EFC
+0EF2:  BTSS    W5.E
+0EF4:  BRA     F10
+0EF6:  BTSS    W5.F
+0EF8:  MOV     #20,W6
+0EFA:  BRA     F10
+0EFC:  BCLR    W5.E
+0EFE:  BTSS    W9.8
+0F00:  BRA     F10
+0F02:  MOV     W0,W10
+0F04:  MOV     #2D,W0
+0F06:  BTSC.B  223.1
+0F08:  BRA     F06
+0F0A:  MOV     W0,224
+0F0C:  BCLR    W9.8
+0F0E:  MOV     W10,W0
+0F10:  ADD.B   W6L,W0L,W0L
+0F12:  BTSC.B  223.1
+0F14:  BRA     F12
+0F16:  MOV     W0,224
+0F18:  RETURN  
+0F1A:  MOV     #12,W5
+0F1C:  REPEAT  #3
+0F1E:  MOV     [--W15],[W5--]
+0F20:  MOV     [--W15],W5
+0F22:  RETURN  
+....................  
+.................... #list 
+....................  
+.................... #include "BL_Support.h" 
+.................... /*  
+....................  * File:    BL_Support.h 
+....................  * Author:  Dr.Santi Nuratch 
+....................  *          Embedded Intelligence Lab., INC-KMUTT 
+....................  * Created on 22 September 2016, 13:14 
+....................  */ 
+....................  
+.................... #ifndef BL_SUPPORT_H 
+.................... #define	BL_SUPPORT_H 
+....................  
+.................... /******************************************************************************/ 
+.................... /*                   BOOTLOADER SUPPORT CONFIGURATION                         */ 
+.................... /*                          (DO NOT CHANGE)                                   */ 
+.................... /******************************************************************************/ 
+.................... /* Bootloader */ 
+.................... #define LOADER_PAGES 	3  
+.................... #define ERASE_SIZE 		2048    /* 2048 bytes, 24-bit (3 bytes) per instruction, but it uses 4 bytes aligned --> 4 bytes per word */ 
+....................                                 /* each block has 512 instructions (1024 words), each instruction requires 4 bytes (2 words), so 512*4 = 2048 bytes */ 
+.................... #define LOADER_SIZE 	((LOADER_PAGES * (ERASE_SIZE/2)) - 1)   /* 2 bytes per address, so divided by 2, 2048/2 = 1024 */  
+.................... #define LOADER_END  	LOADER_SIZE                             /* End address      */ 
+.................... #define LOADER_ADDR 	0xC00//(LOADER_END - LOADER_SIZE)       /* Start address    */ 
+....................  
+.................... #build (reset=LOADER_END+1, interrupt=LOADER_END+5) 
+.................... #org 0, LOADER_END {}   /* 0x0000 - END */ 
+....................  
+.................... /******************************************************************************/ 
+.................... /*                                  END                                       */ 
+.................... /******************************************************************************/ 
+....................  
+.................... #endif	/* BL_SUPPORT_H */ 
+....................  
+....................  
+.................... #use delay(internal = 8 MHz, clock = 32Mhz) 
+0F24:  CP0     W0
+0F26:  BTSC.B  42.1
+0F28:  BRA     F32
+0F2A:  REPEAT  #3E7B
+0F2C:  NOP     
+0F2E:  DEC     W0,W0
+0F30:  BRA     NZ,F2A
+0F32:  RETURN  
+.................... #PIN_SELECT U1RX = PIN_B12 
+.................... #PIN_SELECT U1TX = PIN_B13 
+.................... #use rs232(UART1, BAUD = 115200, XMIT = PIN_B13, RCV = PIN_B12) 
+....................  
+.................... #define do0 PIN_A2 
+.................... #define do1 PIN_A4 
+.................... #define do2 PIN_B2 
+.................... #define do3 PIN_B3 
+.................... #define di0 PIN_B4 
+.................... #define di1 PIN_B5 
+.................... #define di2 PIN_B6 
+.................... #define di3 PIN_B7 
+....................  
+.................... #PIN_SELECT INT1 = di0 
+....................  
+.................... int encount = 0; 
+....................  
+.................... #INT_EXT1 
+.................... void INT_EXT_INPUT1 ( void ){ 
+*
+0DFC:  PUSH    42
+0DFE:  PUSH    36
+0E00:  PUSH    32
+0E02:  MOV     W0,[W15++]
+0E04:  MOV     #2,W0
+0E06:  REPEAT  #C
+0E08:  MOV     [W0++],[W15++]
+.................... 	if(input(di0) == 0){ 
+0E0A:  BSET.B  2C8.4
+0E0C:  BTSC.B  2CA.4
+0E0E:  BRA     E14
+.................... 		encount++; 
+0E10:  INC     0800
+.................... 	}else{ 
+0E12:  BRA     E16
+.................... 		encount--; 
+0E14:  DEC     0800
+.................... 	}	 
+0E16:  BCLR.B  86.4
+0E18:  MOV     #1A,W0
+0E1A:  REPEAT  #C
+0E1C:  MOV     [--W15],[W0--]
+0E1E:  MOV     [--W15],W0
+0E20:  POP     32
+0E22:  POP     36
+0E24:  POP     42
+0E26:  RETFIE  
+.................... } 
+....................  
+.................... void Init_Interrupts() { 
+.................... 	enable_interrupts( INT_EXT1 ); 
+0E28:  BSET.B  96.4
+.................... 	ext_int_edge( 1, H_TO_L ); 
+0E2A:  BSET.B  82.1
+0E2C:  RETURN  
+.................... } 
+....................  
+.................... void main() { 
+*
+0F34:  MOV     #2780,W15
+0F36:  MOV     #27FF,W0
+0F38:  MOV     W0,20
+0F3A:  NOP     
+0F3C:  BSET.B  81.7
+0F3E:  MOV     #46,W0
+0F40:  MOV.B   W0L,742
+0F42:  MOV     #57,W0
+0F44:  MOV.B   W0L,742
+0F46:  BCLR.B  742.6
+0F48:  MOV     #43F,W0
+0F4A:  MOV     W0,680
+0F4C:  MOV     #3F0C,W0
+0F4E:  MOV     W0,6A4
+0F50:  MOV     #300,W0
+0F52:  MOV     W0,6CC
+0F54:  MOV     #46,W0
+0F56:  MOV.B   W0L,742
+0F58:  MOV     #57,W0
+0F5A:  MOV.B   W0L,742
+0F5C:  BSET.B  742.6
+0F5E:  CLR     744
+0F60:  MOV     #8000,W4
+0F62:  MOV     W4,220
+0F64:  MOV     #400,W4
+0F66:  MOV     W4,222
+0F68:  BSET.B  220.3
+0F6A:  MOV     #22,W4
+0F6C:  MOV     W4,228
+0F6E:  CLR     800
+0F70:  SETM    32C
+.................... 	encount = 0; 
+0F72:  CLR     800
+.................... 	disable_interrupts(GLOBAL);	  
+0F74:  BCLR.B  81.7
+0F76:  MOV     #E0,W4
+0F78:  MOV     W4,42
+0F7A:  BSET.B  81.7
+.................... 	Init_Interrupts();   
+0F7C:  CALL    E28
+.................... 	enable_interrupts(GLOBAL); 
+0F80:  BCLR.B  81.7
+0F82:  CLR     42
+0F84:  BSET.B  81.7
+....................  
+.................... 	while(TRUE) { 
+.................... 		if(encount == -1) 
+0F86:  MOV     800,W4
+0F88:  MOV     #FFFF,W3
+0F8A:  CP      W3,W4
+0F8C:  BRA     NZ,F90
+.................... 			encount = 0; 
+0F8E:  CLR     800
+.................... 		printf("%d\n", encount); 
+0F90:  MOV     800,W0
+0F92:  MOV     #0,W4
+0F94:  CALL    E2E
+0F98:  BTSC.B  223.1
+0F9A:  BRA     F98
+0F9C:  MOV     #A,W4
+0F9E:  MOV     W4,224
+.................... 	delay_ms(500); 
+0FA0:  MOV     #1F4,W0
+0FA2:  CALL    F24
+0FA6:  BRA     F86
+.................... 	} 
+.................... } 
+0FA8:  PWRSAV  #0
+
+Configuration Fuses:
+   Word  1L: 3F7F   WPOSTS16 WDT128 WINDIS NOWDT ICSP1 NODEBUG NOWRT NOPROTECT NOJTAG
+          H: FF00  
+   Word  2L: F9F7   NOPR NOALTI2C1 IOL1WAY NOOSCIO FRC_PLL SOSC_SEC WUT_DEFAULT IESO
+          H: FF00  

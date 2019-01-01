@@ -1,0 +1,9 @@
+ÀÄtestSerial
+   ÃÄMAIN  0/134  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@const801  0/28  Ram=0
+   ³  ÀÄhanddleData  0/52  Ram=0
+   ³     ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³     ÀÄ@const797  0/18  Ram=0
+   ÀÄUART1_Isr  0/48  Ram=1
+      ÀÄSM_RxD  0/278  Ram=6

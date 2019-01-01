@@ -1,0 +1,23 @@
+ÀÄmain
+   ÃÄMAIN  0/258  Ram=3
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄInit_Interrupts  0/34  Ram=0
+   ³  ÃÄSetZero  0/90  Ram=2
+   ³  ³  ÃÄBackWardZ  0/12  Ram=0
+   ³  ³  ÃÄStopZ  0/10  Ram=0
+   ³  ³  ÃÄBackWardY  0/12  Ram=0
+   ³  ³  ÃÄStopY  0/10  Ram=0
+   ³  ³  ÃÄBackWardX  0/12  Ram=0
+   ³  ³  ÀÄStopX  0/10  Ram=0
+   ³  ÃÄ@delay_ms1  0/16  Ram=2
+   ³  ÃÄ@const800  0/22  Ram=0
+   ³  ÃÄ@PRINTFD16_115200_5725_5724  0/246  Ram=0
+   ³  ÀÄ@delay_ms1  0/16  Ram=2
+   ÃÄINT_EXT_INPUT0  0/50  Ram=0
+   ÃÄINT_EXT_INPUT1  0/50  Ram=0
+   ÃÄINT_EXT_INPUT2  0/50  Ram=0
+   ÃÄTIMER1_ist  0/156  Ram=5
+   ³  ÃÄ@MULS3232  0/66  Ram=8
+   ³  ÀÄ@MULS3232  0/66  Ram=8
+   ÀÄUART1_Isr  0/48  Ram=1
+      ÀÄSM_RxD  0/292  Ram=6

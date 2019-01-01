@@ -1,0 +1,83 @@
+
+ROM used:   5314/33788 (16%)
+            5314/33788 (16%) including unused fragments
+
+            3.7 Average locations per line
+            22.1 Average locations per statement
+
+RAM used:   278/8192 (3%) at main() level
+            343/8192 (4%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  541   240 100  mainPIC.c
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.h
+   32     0   0  BL_Support.h
+----- -----
+ 1435   240 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   0    2             @delay_ms1
+0     10   0    0    32  1.0  FowardX
+0     10   0    0    32  1.0  BackWardX
+0     10   0    0    32  1.0  StopX
+0     10   0    0    32  1.0  FowardY
+0     10   0    0    32  1.0  BackWardY
+0     10   0    0    32  1.0  FowardZ
+0     10   0    0    32  1.0  BackWardZ
+0     10   0    0    32  1.0  StopZ
+0    292   3    6  1880 10.7  SM_RxD
+0     98   1   17    78  3.1  EncoderX
+0    100   1    0             @SI64TOF64
+0    272   3    0             @MULFF64
+0    264   2    8             @DIVFF64
+0     86   1    0             @F64TOSI64
+0     98   1   17    78  3.1  EncoderY
+0     98   1   17    78  3.1  EncoderZ
+0     78   1    2   522  2.8  PwmZero
+0     42   0    0    54  2.0  PwmMotorZ
+0    104   1    8             @FLT
+0    252   2   11   300  6.3  PwmMotorX
+0     44   0    4             @SFTOI
+0    132   1    0             @FLT64
+0     68   1    0             @F64TO48
+0    252   2   11   300  6.3  PwmMotorY
+0     72   1    2   108  3.7  INT_EXT_INPUT0
+0     78   1    4             @SDTOF
+0     72   1    2   108  3.7  INT_EXT_INPUT1
+0     72   1    2   108  3.7  INT_EXT_INPUT2
+0    746   7    5  1329  6.0  TIMER1_ist
+0    426   4    8             @ADDFF
+0     74   1    2             @SITOF
+0    196   2    8             @MULFF
+0     48   0    1    45  1.7  UART1_Isr
+0     46   0    0   310  2.3  Init_Interrupts
+0     14   0    0    52  1.9  Init_Timer1
+0    528   5    3  1845  8.3  MAIN
+0     58   1    2             @ITOF
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               24
+    Statements              240
+    Comments                218
+    Volume (V)              11979
+    Difficulty (D)          79.2
+    Effort to implement (E) 948276
+    Time to implement (T)   14 hours, 38 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   40
+    Maintainability (MI)    51
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  4806  25402  
+
+
+

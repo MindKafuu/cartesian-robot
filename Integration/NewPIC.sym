@@ -1,0 +1,157 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @DIVFF.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W1  @SFTOI.P3
+W0      @delay_ms1.P4
+W0 -W3  @MULFF64.P5
+W0 -W1  @DIV3232B.P6
+W0 -W1  @MULS3232.P7
+W0 -W3  @ADDFF64.P8
+W0 -W3  @SI64TOF64.P9
+W0 -W1  @DIVS3232A.P10
+W0 -W3  @F64TO48.P11
+W0      @PRINTFD16_115200_5725_5724.P12
+W0      @delay_us1.P13
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2 -W3  @DIV3232B.P1
+W2      @READ_PACKED_MEMORY.P2
+W2 -W3  @DIVS3232A.P3
+W2      @READ_ROM_MEMORY.P4
+W2 -W3  @MULS3232.P5
+W2      @WRITE_PACKED_MEMORY.P6
+W2 -W3  @DIVFF.P7
+W3      @READ_PACKED_MEMORY.P1
+W3      @READ_ROM_MEMORY.P2
+W3      @WRITE_PACKED_MEMORY.P3
+W4 -W7  @ADDFF64.P1
+W4 -W7  @MULFF64.P2
+W4      @PRINTFD16_115200_5725_5724.P3
+630.6   C1OUT
+630.7   C2OUT
+800-803 encountX
+804-807 encountY
+808-80B encountZ
+80C-80D directionX
+80E-80F directionY
+810-811 directionZ
+812-813 positionX
+814-815 positionY
+816-817 check
+818-819 check_data
+81A-81B checksum
+81C     getPackage
+81D     theta
+81E-821 setpointX
+822-825 setpointY
+826-827 count1
+828-829 count2
+82A-82B count3
+82C-82D offset
+82E-82F offset1
+830-831 offset3
+832-834 ModeSystem
+83C-83D Pattern2.posX
+83C-83D Difference.posX
+83C-83D Pattern3.posX
+83C-83D Pattern1.posX
+83E-83F Pattern1.posY
+83E-83F Pattern3.posY
+83E-83F Pattern2.posY
+83E-83F Difference.posY
+844-845 PwmZero.check
+846-847 SetX.SetX
+846-847 SetY.SetY
+846-847 PwmZero.state
+848-849 SetX.check
+848-849 SetY.check
+84A-84B SetZ.SetZ
+84A-84B SetY.errY
+84A-84B servo.degree
+84A-84B SetX.errX
+84C-84D SetZ.check
+84C-84F servo.time_servo
+84C-84D SetX.dutyX
+84C-84D SetY.dutyY
+84E-84F SetZ.errZ
+850-851 SetZ.dutyZ
+850-851 servo.pwm_servo
+888     UART1_Isr.c
+88A     SM_RxD.c
+88B     SM_RxD.checksum_1
+88C     SM_RxD.checksum_2
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const851.call
+000E12  @const855.call
+000E24  INT_EXT_INPUT0
+000E56  INT_EXT_INPUT1
+000E88  INT_EXT_INPUT2
+000EBA  SM_RxD
+000FDE  UART1_Isr
+00100E  Init_Interrupts
+001024  @delay_ms1
+001034  BackWardX
+001040  StopX
+00104A  BackWardY
+001056  StopY
+001060  BackWardZ
+00106C  StopZ
+001076  FowardZ
+001084  SetZ
+00111E  @SI64TOF64
+001182  @MULFF64
+001292  @ADDFF64
+001480  @F64TO48
+0014C4  @DIVFF
+00158E  @SFTOI
+0015BA  servo
+001638  PwmZero
+0016FA  @MULS3232
+00173C  @DIVS3232A
+0017BA  FowardX
+0017C8  SetX
+001860  FowardY
+00186E  SetY
+001906  Pattern1
+001AC8  Difference
+001B9E  Pattern2
+001CF2  Pattern3
+001EB4  @PRINTFD16_115200_5725_5724
+001FAA  MAIN
+001FAA  @cinit1
+002034  @cinit2
+
+Project Directory:
+    D:\Module6-7\Integration\
+
+Project Files:
+    NewPIC.c                                                [26-Nov-18 12:09  CRC=E9BC6AFB]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+
+Source signature=66F77F8D
+
+Units:
+    NewPIC (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    Errors:      NewPIC.err
+    INHX8:       NewPIC.hex
+    Symbols:     NewPIC.sym
+    List:        NewPIC.lst
+    Debug/COFF:  NewPIC.cof
+    Project:     NewPIC.ccspjt
+    Call Tree:   NewPIC.tre
+    Statistics:  NewPIC.STA

@@ -1,0 +1,102 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0      @delay_us1.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W1  @DIV3232B.P3
+W0      @delay_ms1.P4
+W0      @PRINTFD16_115200_5725_5724.P5
+W0 -W1  @MULS3232.P6
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2 -W3  @DIV3232B.P1
+W2      @READ_ROM_MEMORY.P2
+W2      @WRITE_PACKED_MEMORY.P3
+W2 -W3  @MULS3232.P4
+W2      @READ_PACKED_MEMORY.P5
+W3      @READ_ROM_MEMORY.P1
+W3      @WRITE_PACKED_MEMORY.P2
+W3      @READ_PACKED_MEMORY.P3
+W4      @PRINTFD16_115200_5725_5724.P1
+630.6   C1OUT
+630.7   C2OUT
+800-803 encountX
+804-807 encountY
+808-80B encountZ
+80C-80D directionX
+80E-80F directionY
+810-811 directionZ
+812-813 positionX
+814-815 positionY
+816-817 data
+818-819 check
+81A-81B check_data
+81C-81D checksum
+81E     getPackage
+81F     theta
+820-823 setpointX
+824-827 setpointY
+828-82B errorMotorX
+82C-82F sumErrorX
+830-833 pwmX
+834-837 pX
+838     ModeSystem
+844     UART1_Isr.c
+846     SM_RxD.c
+847     SM_RxD.checksum_1
+848     SM_RxD.checksum_2
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const800.call
+000E12  INT_EXT_INPUT0
+000E44  INT_EXT_INPUT1
+000E76  INT_EXT_INPUT2
+000EA8  @MULS3232
+000EEA  TIMER1_ist
+000F86  SM_RxD
+0010AA  UART1_Isr
+0010DA  Init_Interrupts
+0010FC  BackWardZ
+001108  StopZ
+001112  BackWardY
+00111E  StopY
+001128  BackWardX
+001134  StopX
+00113E  SetZero
+001198  @delay_ms1
+0011A8  @PRINTFD16_115200_5725_5724
+00129E  MAIN
+00129E  @cinit1
+001326  @cinit2
+
+Project Directory:
+    D:\Module6-7\Integration\
+
+Project Files:
+    main.c                                                  [22-Nov-18 16:52  CRC=82C35F79]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.h       [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:22  CRC=2918F78D]
+
+Source signature=FFFE740B
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+
+Output Files:
+    Errors:      main.err
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

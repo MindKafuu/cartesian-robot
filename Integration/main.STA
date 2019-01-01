@@ -1,0 +1,64 @@
+
+ROM used:   1952/33788 (6%)
+            1952/33788 (6%) including unused fragments
+
+            1.6 Average locations per line
+            12.2 Average locations per statement
+
+RAM used:   188/8192 (2%) at main() level
+            202/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  361   160 100  main.c
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.h
+   32     0   0  BL_Support.h
+----- -----
+ 1255   160 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   0    2             @delay_ms1
+0     12   0    0    50  1.5  BackWardX
+0     10   0    0    32  1.0  StopX
+0     12   0    0    50  1.5  BackWardY
+0     10   0    0    32  1.0  StopY
+0     12   0    0    50  1.5  BackWardZ
+0     10   0    0    32  1.0  StopZ
+0    292   7    6  1880 10.7  SM_RxD
+0     90   2    2   607  3.3  SetZero
+0     50   1    0    66  2.9  INT_EXT_INPUT0
+0     50   1    0    66  2.9  INT_EXT_INPUT1
+0     50   1    0    66  2.9  INT_EXT_INPUT2
+0    156   4    5   270  4.8  TIMER1_ist
+0     66   2    8             @MULS3232
+0     48   1    1    45  1.7  UART1_Isr
+0     34   1    0   260  2.3  Init_Interrupts
+0    258   7    3   439  3.7  MAIN
+0     22   1    0             @const800
+0    246   6    0             @PRINTFD16_115200_5725_5724
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               15
+    Statements              160
+    Comments                179
+    Volume (V)              6053
+    Difficulty (D)          45.6
+    Effort to implement (E) 275923
+    Time to implement (T)   4 hours, 15 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   22
+    Maintainability (MI)    61
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  1444  28764  
+
+
+
